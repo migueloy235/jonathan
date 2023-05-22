@@ -19,6 +19,8 @@ from django.urls import path
 from miapp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.index, name="index"),
+    path('index/',views.index, name="index"),
+        path('',views.login, name="login"),
+
 ]
 #hola
